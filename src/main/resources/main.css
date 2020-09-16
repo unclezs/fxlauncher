@@ -1,0 +1,95 @@
+.loading:determinate .arc {
+    -fx-stroke: #0F9D58;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: derive(black, 70%);
+    -fx-background-insets: 4;
+    -fx-background-radius: 5px;
+}
+
+/*拖动的时候变大*/
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:pressed,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-insets: 3;
+}
+
+.loading:determinate .percentage {
+    -fx-fill: #4d4d4d;
+}
+
+.loading .arc {
+    -fx-stroke: #0F9D58;
+    -fx-stroke-width: 1;
+}
+
+.updater .label {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-font-family: Tahoma;
+}
+
+.updater .h1 {
+    -fx-font-size: 35px;
+}
+
+
+.container {
+    -fx-background-color: linear-gradient(rgb(31, 212, 174), rgb(30, 205, 148));
+    -fx-effect: dropshadow(three-pass-box, #000, 5, 0, 10, 10);
+    -fx-border-radius: 10 !important;
+    -fx-background-radius: 10 !important;
+}
+
+.phase {
+    -fx-font-size: 15px !important;
+}
+
+.what-new {
+    -fx-text-alignment: left;
+    -fx-wrap-text: true;
+    -fx-font-size: 15px !important;
+}
+
+.top-scroll {
+    -fx-background-color: transparent;
+    -fx-pref-height: 160px;
+}
+
+.top-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.updater {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.updater .progress-bar {
+    -fx-pref-width: 250px;
+}
+
+.updater .progress-bar .track {
+    -fx-background-color: #bfbfbf;
+}
+
+.updater .progress-bar .bar {
+    -fx-background-insets: 0;
+    -fx-padding: 3;
+    -fx-background-color: #009688;
+}
+
+.update-text-label {
+    -fx-wrap-text: true;
+    -fx-font-size: 18 !important;
+    -fx-text-alignment: center;
+}
